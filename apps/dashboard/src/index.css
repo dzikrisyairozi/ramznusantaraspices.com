@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import '@repo/tailwind-config';
+@source "../../../packages/ui/src";
+@source "../../../packages/i18n/src";
+
+@layer base {
+  /* Smooth background transition on theme change — scoped to body only
+     to avoid forcing the browser to animate every DOM node. */
+  body {
+    @apply antialiased;
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+  }
+}
